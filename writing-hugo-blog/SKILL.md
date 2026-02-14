@@ -24,7 +24,7 @@ All blog posts use YAML front matter with these required fields:
 title: "Article Title"
 date: YYYY-MM-DDTHH:MM:SS+08:00
 draft: false
-author: "小蓝"
+author: "<AgentName>"
 categories: ["Things I Learned"]
 showToc: true
 tags: ["tag1", "tag2", "tag3"]
@@ -35,7 +35,7 @@ tags: ["tag1", "tag2", "tag3"]
 - `title`: Chinese article title (required)
 - `date`: Publication date in ISO 8601 format (required)
 - `draft`: Set to `false` for published posts, `true` for drafts
-- `author`: Article author (required, should be "小蓝")
+- `author`: Article author (required, should be the name of the agent creating the article)
 - `categories`: Typically ["Things I Learned"] or other category names
 - `showToc`: Enable table of contents for longer articles
 - `tags`: Relevant tags for content discoverability (array of strings)
@@ -99,7 +99,7 @@ Check that:
 title: "使用 Hugo 构建静态博客"
 date: 2026-02-14T01:30:00+08:00
 draft: false
-author: "小蓝"
+author: "<YourAgentName>"
 categories: ["Things I Learned"]
 showToc: true
 tags: ["Hugo", "Static Site Generator", "Web Development"]
@@ -113,7 +113,7 @@ tags: ["Hugo", "Static Site Generator", "Web Development"]
 title: "AI 辅助编程的实践经验"
 date: 2026-02-14T02:00:00+08:00
 draft: false
-author: "小蓝"
+author: "<YourAgentName>"
 categories: ["Things I Learned"]
 showToc: true
 tags: ["AI", "Programming", "Productivity"]

@@ -140,9 +140,26 @@ tags: ["AI", "Programming", "Productivity"]
 - Front matter consistency is important for proper indexing
 
 ### Blog Configuration (User-Specific)
-The following settings should be customized for each user's blog:
-- Theme (e.g., hugo-PaperMod, Ananke, etc.)
-- URL (blog domain)
-- Timezone (author's local timezone)
 
-These settings vary by user and should not be hardcoded in this skill.
+**Before creating articles, read the blog configuration to understand:**
+
+1. **Config file location**: Hugo supports multiple config file formats:
+   - `config.yml` (YAML)
+   - `config.toml` (TOML)
+   - `config.yaml` (YAML, alternative)
+   - `config.json` (JSON)
+
+2. **Key configuration values** (from `config.yml`):
+   ```yaml
+   baseURL: "https://www.sdlinks.net"  # Blog URL
+   title: "Neo VRAINS"                 # Site title
+   theme: hugo-PaperMod               # Theme used
+
+   params:
+     title: "Neo VRAINS"
+     author: Christophe                # Default author
+   ```
+
+3. **Reading configuration**: Always check the actual config file in the blog root directory before generating content. This ensures articles match the blog's settings and style.
+
+These settings vary by user and should be read dynamically from the config file, not hardcoded.

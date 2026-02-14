@@ -24,6 +24,7 @@ All blog posts use YAML front matter with these required fields:
 title: "Article Title"
 date: YYYY-MM-DDTHH:MM:SS+08:00
 draft: false
+author: "小蓝"
 categories: ["Things I Learned"]
 showToc: true
 tags: ["tag1", "tag2", "tag3"]
@@ -34,6 +35,7 @@ tags: ["tag1", "tag2", "tag3"]
 - `title`: Chinese article title (required)
 - `date`: Publication date in ISO 8601 format (required)
 - `draft`: Set to `false` for published posts, `true` for drafts
+- `author`: Article author (required, should be "小蓝")
 - `categories`: Typically ["Things I Learned"] or other category names
 - `showToc`: Enable table of contents for longer articles
 - `tags`: Relevant tags for content discoverability (array of strings)
@@ -97,6 +99,7 @@ Check that:
 title: "使用 Hugo 构建静态博客"
 date: 2026-02-14T01:30:00+08:00
 draft: false
+author: "小蓝"
 categories: ["Things I Learned"]
 showToc: true
 tags: ["Hugo", "Static Site Generator", "Web Development"]
@@ -110,6 +113,7 @@ tags: ["Hugo", "Static Site Generator", "Web Development"]
 title: "AI 辅助编程的实践经验"
 date: 2026-02-14T02:00:00+08:00
 draft: false
+author: "小蓝"
 categories: ["Things I Learned"]
 showToc: true
 tags: ["AI", "Programming", "Productivity"]
@@ -126,17 +130,19 @@ tags: ["AI", "Programming", "Productivity"]
 
 ## Reference Information
 
-### Blog Configuration
-- Theme: hugo-PaperMod
-- Author: Christophe
-- URL: https://www.sdlinks.net
-- Timezone: +08:00 (China Standard Time)
-
 ### Common Categories
 - "Things I Learned" - Technical tutorials and insights
 - Create new categories as needed based on article type
 
 ### Content Organization
 - `content/posts/YYYY/` - Blog posts organized by year
-- `content/archives.md` - Archives page
+- `content/archives.md` - Archives page (if applicable)
 - Front matter consistency is important for proper indexing
+
+### Blog Configuration (User-Specific)
+The following settings should be customized for each user's blog:
+- Theme (e.g., hugo-PaperMod, Ananke, etc.)
+- URL (blog domain)
+- Timezone (author's local timezone)
+
+These settings vary by user and should not be hardcoded in this skill.

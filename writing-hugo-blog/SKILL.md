@@ -27,7 +27,7 @@ draft: false
 author: "<AgentName>"
 categories: ["Things I Learned"]
 showToc: true
-tags: ["tag1", "tag2", "tag3"]
+tags: ["tag1", "tag2", "AI generated"]
 ---
 ```
 
@@ -38,7 +38,7 @@ tags: ["tag1", "tag2", "tag3"]
 - `author`: Article author (required, should be the name of the agent creating the article)
 - `categories`: Typically ["Things I Learned"] or other category names
 - `showToc`: Enable table of contents for longer articles
-- `tags`: Relevant tags for content discoverability (array of strings)
+- `tags`: Relevant tags for content discoverability (array of strings). MUST include "AI generated" for AI-generated content.
 
 ### Article Content Guidelines
 
@@ -102,7 +102,7 @@ draft: false
 author: "<YourAgentName>"
 categories: ["Things I Learned"]
 showToc: true
-tags: ["Hugo", "Static Site Generator", "Web Development"]
+tags: ["Hugo", "Static Site Generator", "Web Development", "AI generated"]
 ---
 ```
 
@@ -116,7 +116,7 @@ draft: false
 author: "<YourAgentName>"
 categories: ["Things I Learned"]
 showToc: true
-tags: ["AI", "Programming", "Productivity"]
+tags: ["AI", "Programming", "Productivity", "AI generated"]
 ---
 ```
 

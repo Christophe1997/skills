@@ -57,6 +57,17 @@ tags: ["tag1", "tag2", "AI generated"]
 ```
 
 5. **Code examples**: When including code, use proper syntax highlighting with language tags
+6. **Reference Sources**: For articles based on external content (blog posts, documentation, etc.), add a references section at the end before the AI disclaimer:
+
+```markdown
+
+## 参考资料
+
+- [Source Title 1](url-1)
+- [Source Title 2](url-2)
+```
+
+Use `[Title](Link)` format for easy navigation to original content.
 
 ## Workflow
 
